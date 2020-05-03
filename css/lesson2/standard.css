@@ -28,70 +28,31 @@ footer a{
     color: white;
 }
 .fitt{
-    background-color: #fffef1;
+    background-color:#fffef1;
     color: #2d000b;
     text-align: center;
-    padding: 2.5%;
-    border-radius: 5%;
+    border-radius: 4%;
+    margin: 3%;
 }
 .hick{
     background-color: #fffef1;
     color: #2d000b;
     text-align: center;
-    padding: 2.5%;
-    border-radius: 5%;
+    border-radius: 4%;
+    margin: 3%;
 }
 .whitespace{
     background-color: #fffef1;
     color: #2d000b;
     text-align: center;
-    padding: 2.5%;
-    border-radius: 5%;
+    border-radius: 4%;
+    margin: 3%;
 }
 h2{
     background-color: #911f27;
     color: white;
     text-align: center;
     border-radius: .5em;
-    padding: .5em;
-}
-
-@media only screen and (min-width: 32.5em){
-    section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .fitt {
-        grid-column: 1/2;
-        
-    }
-    
-    .hick {
-        grid-column: 2/3;
-        
-    }
-    
-    .whitespace {
-        grid-column: 1/3;
-        
-    }
-}
-
-@media only screen and (min-width: 60em){
-    section{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
-    }
-    .fitt {
-        grid-column: 1/2;
-    }
-    
-    .hick {
-        grid-column: 2/3;
-    }
-    
-    .whitespace {
-        grid-column: 4/3;
-    }
+    padding: 8%;
+    margin: 0px;
 }
