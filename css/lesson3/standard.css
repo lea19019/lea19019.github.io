@@ -12,7 +12,7 @@ h1,h2{
 .header{
     background-color: #072e74;
     color: white;
-    padding: 1%;
+    padding: 3%;
 }
 .nav{
     background-color: #6db9d5;
@@ -36,11 +36,13 @@ header{
     background-color: #072e74;
     color: white;
     padding: 3%;
+    border-radius: .5em;
 }
 
 nav{
     background-color: #6db9d5;
     text-align: center;
+    border-radius: .5em;
 }
 nav ul {
 	list-style-type: none;
@@ -59,13 +61,15 @@ nav ul li a {
 
 main{
     background-color: #EAF2F1;
+    border-radius: .5em;
 }
 img{
-    width: 50%;
+    width: 45%;
 }
 
 footer{
     background-color: #6db9d5;
     text-align: center;
     color: #EAF2F1;
+    border-radius: .5em;
 }
