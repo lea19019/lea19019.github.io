@@ -68,8 +68,12 @@ img{
 }
 
 footer{
-    background-color: #6db9d5;
+    background-color: #676767;
     text-align: center;
     color: #EAF2F1;
     border-radius: .5em;
+}
+
+footer a{
+    color: white;
 }
