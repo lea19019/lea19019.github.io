@@ -18,6 +18,12 @@ header{
 img{
     width: 60px;
 }
+header h1,p{
+    margin: 0;
+}
+.sky{
+    margin: 15px 0;
+}
 
 nav {
 	margin: 0 auto;
