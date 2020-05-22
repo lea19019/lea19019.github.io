@@ -1,0 +1,125 @@
+body{
+    background-color: white;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #072e74;
+    color: white;
+    padding: 5px;
+}
+.cloud{
+    width: 60px;
+}
+header h1,p{
+    margin: 0;
+}
+.sky{
+    margin: 15px 0;
+}
+
+nav {
+	margin: 0 auto;
+	background-color: #6db9d5;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+ul.navigation{
+    margin: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #072e74;
+}
+
+.responsive li {
+	display: block;
+}
+h2{
+    margin: 0;
+    padding: .5rem;
+}
+main{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero{
+    position: relative;
+    margin: 0 auto;
+}
+
+.heroimg{
+    max-width: 100%;
+}
+
+.summary{
+    position: absolute;
+    border: 1px solid #6db9d5;
+    background: radial-gradient(#fff, #6db9d5);
+    top: 25px;
+    right: 25px;
+}
+
+.second{
+    font-weight: bold;
+    color: #00b100;
+}
+
+.day5{
+    display: none;
+}
+
+.article{
+    display: inline-block;
+    margin: 0 auto;
+    width: 95%;
+    text-align: justify;
+    background-color: #EAF2F1;
+    margin-top: 20px;
+}
+
+.covid{
+    max-width: 100%;
+}
+
+.contact{
+    background-color: burlywood;
+    margin-top: 30px;
+}
+.prestonmap{
+    display: none;
+}
+footer{
+    margin: 0 auto;
+    background-color: #676767;
+    text-align: center;
+    color: #EAF2F1;
+}
+
+footer a{
+    color: white;
+}
