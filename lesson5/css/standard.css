@@ -29,6 +29,9 @@ nav {
 	margin: 0 auto;
 	background-color: #6db9d5;
 }
+.page{
+    background-color: #EAF2F1;
+}
 .navigation {
 	list-style: none;
 	padding: 0;
@@ -109,6 +112,9 @@ main{
 .contact{
     background-color: burlywood;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .prestonmap{
     display: none;
