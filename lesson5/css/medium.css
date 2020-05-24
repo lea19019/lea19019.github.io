@@ -1,4 +1,7 @@
 @media only screen and (min-width: 37.5em){
+	aside{
+		font-size: 150%;
+	}
     .navigation {
 		display: flex;
 	}
