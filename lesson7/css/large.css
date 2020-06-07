@@ -5,7 +5,13 @@
     }
 
     main{
-        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .title{
+        grid-column: 1/4;
+    }
+    picture:hover{
+        box-shadow: 0 0 50px #333;
     }
     .hero{
 		width: 75%;

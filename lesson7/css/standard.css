@@ -73,49 +73,16 @@ h2{
 }
 main{
     margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 20px 20px;
+}
+figcaption{
     text-align: center;
-    justify-content: center;
 }
-
-.hero{
-    position: relative;
-    margin: 0 auto;
-}
-
-.heroimg{
-    max-width: 100%;
-}
-
-.summary{
-    position: absolute;
-    width: 200px;
-    border: 1px solid #6db9d5;
-    background: radial-gradient(#fff, #6db9d5);
-    top: 25px;
-    right: 25px;
-    opacity: .75;
-}
-
-.second{
-    font-weight: bold;
-    color: #00b100;
-}
-
-.day5{
-    display: none;
-}
-
-.article{
-    display: inline-block;
-    margin: 0 auto;
-    width: 95%;
-    text-align: justify;
-    background-color: #EAF2F1;
-    margin-top: 20px;
-}
-
-.covid{
-    max-width: 100%;
+img{
+    max-width: 250px;
 }
 
 .contact{

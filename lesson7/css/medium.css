@@ -17,39 +17,11 @@
     }
     
     main{
-        width: 80%;
+		grid-template-columns: 1fr 1fr;
 	}
-
-	.hero{
-		width: 90%;
+	.title{
+		grid-column: 1/3;
 	}
-	
-	.summary{
-		top: 45px;
-		left: 25px;
-	}
-
-	.day5{
-		width: 90%;
-		display: contents;
-	}
-	.week{
-		margin: 0 auto;
-	}
-	.days{
-		background-color: yellow;
-	}
-	
-	.article{
-		width: 90%;
-	}
-	.covid{
-		float: right;
-		max-width: 275px;
-		margin-top: 35px;
-		margin-left: 10px;
-	}
-
 	.contact{
 		width: 90%;
 		margin: 0 auto;
@@ -62,7 +34,5 @@
 	
     footer {
         width: 90%;
-    }
-
-
+	}
 }
