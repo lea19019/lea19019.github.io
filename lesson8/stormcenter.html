@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment for week 6, Responsive Images and Font">
+    <title>Preston | Vicente Castillo</title>
+    <link rel="cloud icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nomalize.css">
+    <link rel="stylesheet" href="/lesson8/css/standard.css">
+    <link rel="stylesheet" href="/lesson8/css/medium.css">
+    <link rel="stylesheet" href="/lesson8/css/large.css">
+    
+</head>
+<body>
+    <aside id="pancakes">
+       <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.
+       </p>
+    </aside>
+    <header>
+        <img class="cloud" src="/images/cloud.png" alt="logo">
+        <section class="sky">
+            <h1>Sky Watcher</h1>
+            <p>A new way to look at weather</p>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="barnav">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" >Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="page">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Storm Center Information</h1>
+        <form method="GET" action="thanks.html">
+        <fieldset>
+            <legend>User Information</legend>
+            <label class="top">Full Name* <input type="text" name="fullname" pattern="[a-zA-Z0-9\s]+.{4,}" required> </label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" > </label>
+            <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required> </label>
+            <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Storm Event</legend>
+            <label class="top">Storm Date <input type="date" name="completeDate"></label>
+
+            <label for="browser" class="top">Storm Type:<input list="stormType" name="stormType" id="storms">
+            </label>
+        <datalist id="stormType"> &#9662;
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+
+            <label class="stormseverity" for="severity">Storm Severity: &nbsp;&nbsp;&nbsp;
+                <input type="range" id="severity" name="rating" value="5" min="1" max="10" step="1" list="values" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span>
+                </label>
+            <datalist id="values">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                </datalist>
+            
+            <label class="top">Storm Region
+                    <select name="stormType">
+                        <option value="" disabled selected>Select Region &#9662; </option>
+                        <option value="idaho">Preston</option>
+                        <option value="bubbly">Soda Springs</option>
+                        <option value="fishLand">Fish Haven</option>
+                        
+                    </select>
+            </label>
+            
+            <div>Are you in danger? </div>
+            <label class="sbs"><input type="radio" name="audience" value="yes"> Yes</label>
+            <label class="sbs"><input type="radio" name="audience" value="maybe"> Maybe</label>
+            <label class="sbs"><input type="radio" name="audience" value="no"> No</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+    
+            <label class="top">Information <br></label>
+            <textarea name="comment" cols="40" rows="10"></textarea>
+    
+        </fieldset>
+
+        <input type="submit" value="Send Report" class="submitBtn">
+            
+        </form>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Vicente Castillo | Mexico City | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p class="date">Last Updated: <span id="last"></span></p>
+    </footer>
+    <script src="/lesson8/js/javascript.js"></script>
+</body>
+</html>
