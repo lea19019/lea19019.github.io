@@ -157,6 +157,9 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
+textarea {
+    width: 90%;
+}
 /*----------- FOOTER --------------*/
 footer{
     margin: 0 auto;
