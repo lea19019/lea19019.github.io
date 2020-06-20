@@ -82,8 +82,41 @@ main{
     margin: 0 auto;
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 
+.weatherpic{
+    max-width: 350px;
+    padding: 1rem;
+}
+.towns h3, h4{
+    margin: 10px auto;
+    color: #072e74;
+}
+h3{
+    font-size: 30px;
+}
+
+.towns img {
+    padding: .5rem;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 12px;
+    padding: 2rem;
+}
+
+ .secs {
+    background-color: #b8bbcc;
+    border: 2px solid #b8bbcc;
+    text-align: center;
+    box-shadow: 0 0 15px #333;
+} 
 
 /*----------- FOOTER --------------*/
 footer{

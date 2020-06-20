@@ -18,17 +18,23 @@
     
     main{
 		grid-template-columns: 1fr 1fr;
+		text-align: left;
+		max-width: 90%;
 	}
-	
-	
-	.contact{
-		width: 90%;
-		margin: 0 auto;
-		margin-top: 35px;
-		justify-content: center;
+	.weatherpic{
+		float: right;
 	}
-	.prestonmap{
-		display: block;
+	.towns section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	  }
+	.towns section:nth-child(odd) .data {
+		grid-column: 1;
+		grid-row: 1;
+		}
+	.towns section:nth-child(odd) img {
+		grid-column: 2;
 	}
 	
     footer {

@@ -5,10 +5,25 @@
     }
 
     main{
-        max-width: 64rem;
+        max-width: 78rem;
         margin:auto;
     }
-    
+
+    .weatherpic{
+        display: block;
+    }
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .towns img {
+        padding: .5rem;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .towns section{
+        display: block;
+    }
     
 
     footer {

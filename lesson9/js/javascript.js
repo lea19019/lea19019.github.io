@@ -33,32 +33,37 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const towns = jsonObject['towns'];
+    const page = towns.filter(towns => (towns.name == 'Preston' || towns.name == 'Fish Haven' || towns.name == 'Soda Springs'));
 
-    for (let i = 0; i < towns.length; i++ ) {
+    page.forEach(towns => {
+
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let h4 = document.createElement('h4');
-        let p = document.createElement('p');
-        let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
+        let info = document.createElement('div');
+        let name = document.createElement('h3');
+        let motto = document.createElement('h4');
+        let year = document.createElement('p');
+        let population = document.createElement('p');
+        let rain = document.createElement('p');
         let photo = document.createElement('img');
 
-        h2.textContent = towns[i].name;
-        h4.textContent = towns[i].motto;
-        p.textContent = 'Year Founded: ' + towns[i].yearFounded;
-        p2.textContent = 'Population: ' + towns[i].currentPopulation;
-        p3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-        photo.setAttribute('src', towns[i].photo);
-        photo.setAttribute('alt', towns[i].name);
+        card.setAttribute('class', 'secs')
+        info.setAttribute('class', 'data')
+        name.textContent = towns.name;
+        motto.textContent = towns.motto;
+        year.textContent = 'Year Founded: ' + towns.yearFounded;
+        population.textContent = 'Population: ' + towns.currentPopulation;
+        rain.textContent = 'Annual Rain Fall: ' + towns.averageRainfall;
+        photo.setAttribute('src', towns.photo);
+        photo.setAttribute('alt', towns.name);
 
-        card.appendChild(h2);
-        card.appendChild(h4);
-        card.appendChild(p);
-        card.appendChild(p2);
-        card.appendChild(p3);
+        card.appendChild(info);
+        info.appendChild(name);
+        info.appendChild(motto);
+        info.appendChild(year);
+        info.appendChild(population);
+        info.appendChild(rain);
         card.appendChild(photo);
         
         document.querySelector('div.towns').appendChild(card);
-    }
-
+    })
   });
