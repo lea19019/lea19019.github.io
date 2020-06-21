@@ -28,6 +28,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
+		clear: both;
 	  }
 	.towns section:nth-child(odd) .data {
 		grid-column: 1;
