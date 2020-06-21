@@ -84,7 +84,9 @@ main{
     align-items: center;
     text-align: center;
 }
-
+h1{
+    color: #072e74;
+}
 .weatherpic{
     max-width: 350px;
     padding: 1rem;

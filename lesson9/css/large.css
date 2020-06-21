@@ -8,11 +8,22 @@
         max-width: 78rem;
         margin:auto;
     }
-
-    .weatherpic{
-        display: block;
+    .article{
+		display: flex;
     }
+    h1{
+        text-align: center;
+    }
+    .words{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	.weatherpic{
+		max-height: 400px;
+	}
     .towns {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
