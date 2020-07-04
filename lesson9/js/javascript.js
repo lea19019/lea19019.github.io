@@ -46,6 +46,9 @@ fetch(requestURL)
         let rain = document.createElement('p');
         let photo = document.createElement('img');
 
+        if (towns.name == 'Fish Haven') {
+          photo.setAttribute('class', 'move');
+        }
         card.setAttribute('class', 'secs')
         info.setAttribute('class', 'data')
         name.textContent = towns.name;

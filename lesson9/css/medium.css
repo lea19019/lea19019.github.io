@@ -24,18 +24,18 @@
 	.weatherpic{
 		float: right;
 	}
-	.towns section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+	.secs{
+		display: flex;
+		flex-direction: row;
 		align-items: center;
-		clear: both;
-	  }
-	.towns section:nth-child(odd) .data {
-		grid-column: 1;
-		grid-row: 1;
-		}
-	.towns section:nth-child(odd) img {
-		grid-column: 2;
+		
+	}
+	  
+	.secs:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+	.move{
+		align-items: left;
 	}
 	
     footer {
