@@ -71,8 +71,14 @@ ul.navigation{
 	display: block;
 }
 h2{
-    margin: 0;
-    padding: .5rem;
+    margin: 10px auto;
+    color: #072e74;
+    font-size: 35px;
+}
+h3{
+    margin: 10px auto;
+    color: #072e74;
+    font-size: 25px;
 }
 main{
     margin: 0 auto;
@@ -87,6 +93,7 @@ main{
 
 .heroimg{
     max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .summary{
@@ -115,13 +122,24 @@ main{
     margin: 0 auto;
     width: 95%;
     text-align: justify;
-    background-color: #EAF2F1;
+    background-color: #b8bbcc;
+    border: 2px solid #b8bbcc;
+    box-shadow: 0 0 15px #333;
     margin-top: 20px;
 }
 
 .covid{
     max-width: 100%;
 }
+
+ #town {
+    margin: 0 auto;
+    background-color: #b8bbcc;
+    border: 2px solid #b8bbcc;
+    text-align: center;
+    box-shadow: 0 0 15px #333;
+    max-width: 65%;
+} 
 
 .contact{
     background-color: burlywood;
@@ -133,6 +151,7 @@ main{
 .prestonmap{
     display: none;
 }
+
 footer{
     margin: 0 auto;
     background-color: #676767;

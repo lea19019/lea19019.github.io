@@ -21,7 +21,7 @@ fetch(apiURL)
     });
 
 
-    const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=fbe42185a9d1d8058b38ba6ae362d1f0';
+    const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.037167&lon=-111.396&APPID=fbe42185a9d1d8058b38ba6ae362d1f0';
 
     fetch(forecastURL)
         .then((response) => response.json())
@@ -42,3 +42,33 @@ fetch(apiURL)
 
         });
 
+        const url = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((jsObject) => {
+        
+                const events = document.getElementById('town');
+                let title = document.createElement('h3');
+                title.textContent = 'Upcoming Events';
+                events.appendChild(title);
+        
+                for (let i = 0; i < jsObject.towns.length; i++) {
+        
+                    
+                    if (jsObject.towns[i].name == "Fish Haven") {
+        
+                        for (let j = 0; j < jsObject.towns[i].events[j].length; j++) {
+        
+                            
+                            let event = document.createElement('p');
+                            event.textContent = jsObject.towns[i].events[j];
+                            events.appendChild(event);
+                            console.log(jsObject.towns[i].events[j]);
+        
+                        }
+        
+                    }
+        
+                }
+            });

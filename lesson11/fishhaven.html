@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,17 @@
     <link rel="cloud icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/nomalize.css">
-    <link rel="stylesheet" href="/lesson10/css/standard.css">
-    <link rel="stylesheet" href="/lesson10/css/medium.css">
-    <link rel="stylesheet" href="/lesson10/css/large.css">
-    
+    <link rel="stylesheet" href="/lesson11/css/towns/standard.css">
+    <link rel="stylesheet" href="/lesson11/css/towns/medium.css">
+    <link rel="stylesheet" href="/lesson11/css/towns/large.css">
+
 </head>
+
 <body>
     <aside id="pancakes">
-       <p>
-        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.
-       </p>
+        <p>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.
+        </p>
     </aside>
     <header>
         <img class="cloud" src="/images/cloud.png" alt="logo">
@@ -47,7 +49,7 @@
                 High: <span id="high"></span><br>
                 Wind Chill: <span id="chill"></span><br>
                 Humidity: <span id="humidity"></span><br>
-                Wind Speed: <span id="speed" ></span>
+                Wind Speed: <span id="speed"></span>
             </section>
         </div>
         <div class="day5">
@@ -83,43 +85,60 @@
                 </tr>
             </table>
         </div>
-        <div class="article">
-            <img src="/images/coronavirus.jpg" alt="covid" class="covid">
-            <h3>Will Hot Weather Kill the Coronavirus Where You Live?</h3>
-            <h4>By Nathaniel Lash and Stuart A. Thompson</h4>
-            <p class="paragraph">
-                For many people living with the crushing consequences of Covid-19, the summer offers a tantalizing possibility: 
-                If the coronavirus behaves like the seasonal flu, warm weather could substantially weaken the virus and allow 
-                normal life to resume. President Trump predicted exactly this outcome in February, claiming the virus would 
-                “miraculously” go away by April as temperatures rose. A new working paper tries to put that speculation to rest 
-                by tracking how weather and other environmental conditions, such as pollution, affect the virus’s spread around 
-                the world. The forecast from researchers is grim: Warm weather alone will not control the virus in America or 
-                abroad. Here are the results for the United States, showing weather on its own cannot meaningfully reduce 
-                infections to the rate of 1 new case per every infected person, the point by which the number of infections falls
-                continuously.
-            </p>
-            <p>Keep reading at:</p>
-            <p>
-                <a href="https://www.nytimes.com/interactive/2020/05/21/opinion/coronavirus-warm-weather-summer-infections.html">
-                New York Times, Will Hot Weather Kill the Coronavirus Where You Live?</a>
-            </p>
+        <div class="information">
+            <div id="town"></div>
+            <div class="article">
+                <img src="/images/coronavirus.jpg" alt="covid" class="covid">
+                <h3>Will Hot Weather Kill the Coronavirus Where You Live?</h3>
+                <h4>By Nathaniel Lash and Stuart A. Thompson</h4>
+                <p class="paragraph">
+                    For many people living with the crushing consequences of Covid-19, the summer offers a tantalizing
+                    possibility:
+                    If the coronavirus behaves like the seasonal flu, warm weather could substantially weaken the virus
+                    and allow
+                    normal life to resume. President Trump predicted exactly this outcome in February, claiming the
+                    virus would
+                    “miraculously” go away by April as temperatures rose. A new working paper tries to put that
+                    speculation to rest
+                    by tracking how weather and other environmental conditions, such as pollution, affect the virus’s
+                    spread around
+                    the world. The forecast from researchers is grim: Warm weather alone will not control the virus in
+                    America or
+                    abroad. Here are the results for the United States, showing weather on its own cannot meaningfully
+                    reduce
+                    infections to the rate of 1 new case per every infected person, the point by which the number of
+                    infections falls
+                    continuously.
+                </p>
+                <p>Keep reading at:</p>
+                <p>
+                    <a
+                        href="https://www.nytimes.com/interactive/2020/05/21/opinion/coronavirus-warm-weather-summer-infections.html">
+                        New York Times, Will Hot Weather Kill the Coronavirus Where You Live?</a>
+                </p>
+            </div>
+            
         </div>
         <div class="contact">
             <img src="/images/prestonmap.gif" alt="preston" width="150" class="prestonmap">
             <section class="sm">
                 <p><b>Sky Watcher</b><br>30 N 1st E <br> Preston, ID 83263</p>
-                <a href="https://www.facebook.com/profile.php?id=100013373613945"> <img src="/images/face.jpg" alt="face" width="24"></a>
+                <a href="https://www.facebook.com/profile.php?id=100013373613945"> <img src="/images/face.jpg"
+                        alt="face" width="24"></a>
                 <a href="https://www.instagram.com/?hl=en"><img src="/images/ig.png" alt="ig" width="24"></a>
-                <a href="https://www.youtube.com/channel/UCROGnOegN3YiTPjG-uchKOA?view_as=subscriber"> <img src="/images/youtube.png" alt="youtube" width="24"></a>
+                <a href="https://www.youtube.com/channel/UCROGnOegN3YiTPjG-uchKOA?view_as=subscriber"> <img
+                        src="/images/youtube.png" alt="youtube" width="24"></a>
             </section>
         </div>
     </main>
     <footer>
-        <p> &copy; <span id="currentYear"></span> | Vicente Castillo | Mexico City | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p> &copy; <span id="currentYear"></span> | Vicente Castillo | Mexico City | <a
+                href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
         <p class="date">Last Updated: <span id="last"></span></p>
     </footer>
     <script src="/lesson11/js/time.js"></script>
     <script src="/lesson11/js/fishhaven.js"></script>
     <script src="/lesson11/js/windchill.js"></script>
 </body>
+
 </html>

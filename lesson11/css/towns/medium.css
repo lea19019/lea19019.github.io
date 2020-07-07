@@ -1,0 +1,69 @@
+@media only screen and (min-width: 37.5em){
+	aside{
+		font-size: 150%;
+	}
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    
+    main{
+        width: 80%;
+	}
+
+	.hero{
+		width: 90%;
+	}
+	
+	.summary{
+		top: 45px;
+		left: 25px;
+	}
+
+	.day5{
+		width: 90%;
+		display: contents;
+	}
+	.week{
+		margin: 0 auto;
+		margin-bottom: 20px;
+		background-color: #b8bbcc;
+    	border: 2px solid #b8bbcc;
+    	box-shadow: 0 0 15px #333;
+	}
+	
+	.article{
+		width: 90%;
+	}
+	.covid{
+		float: right;
+		max-width: 275px;
+		margin-top: 35px;
+		margin-left: 10px;
+	}
+
+	.contact{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 35px;
+		justify-content: center;
+	}
+	.prestonmap{
+		display: block;
+	}
+	
+    footer {
+        width: 90%;
+    }
+
+
+}

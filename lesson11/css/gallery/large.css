@@ -1,0 +1,26 @@
+@media only screen and (min-width: 60em){
+    header{
+        font-size: medium;
+        padding: 7px;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .title{
+        grid-column: 1/4;
+    }
+    figcaption{
+        display: block;
+    }
+    picture:hover{
+        box-shadow: 0 0 50px #333;
+    }
+    .hero{
+		width: 75%;
+	}
+
+    footer {
+        width: 85%;
+    }
+}

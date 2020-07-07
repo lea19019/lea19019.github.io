@@ -1,13 +1,16 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 body{
     background-color: white;
     font-family: 'Hind Madurai', sans-serif;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: 'Quicksand', sans-serif;
-}
-h1{
-    text-align: center;
 }
 aside{
     height: 45px;
@@ -17,6 +20,7 @@ aside{
     display: none;
 }
 
+/*----------- HEADER --------------*/
 header{
     display: flex;
     align-items: center;
@@ -35,6 +39,7 @@ header h1,p{
     margin: 15px 0;
 }
 
+/*----------- NAVIGATION --------------*/
 nav {
 	margin: 0 auto;
 	background-color: #6db9d5;
@@ -70,69 +75,55 @@ ul.navigation{
 .responsive li {
 	display: block;
 }
-h2{
-    margin: 0;
-    padding: .5rem;
-}
+
+
+/*----------- MAIN --------------*/
 main{
     margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-}
-
-.hero{
-    position: relative;
-    margin: 0 auto;
-}
-
-.heroimg{
-    max-width: 100%;
-}
-
-.summary{
-    position: absolute;
-    width: 230px;
-    border: 1px solid #6db9d5;
-    background: radial-gradient(#fff, #6db9d5);
-    top: 25px;
-    right: 25px;
-    opacity: .75;
-    font-size: 1.3rem;
-}
-
-.second{
-    font-weight: bold;
-    color: #00b100;
-}
-
-.day5{
-    display: none;
-    font-size: 1.3rem;
-}
-
-.article{
-    display: inline-block;
-    margin: 0 auto;
-    width: 95%;
-    text-align: justify;
-    background-color: #EAF2F1;
-    margin-top: 20px;
-}
-
-.covid{
-    max-width: 100%;
-}
-
-.contact{
-    background-color: burlywood;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    text-align: center;
 }
-.prestonmap{
-    display: none;
+.title{
+    color: #072e74;
 }
+.words{
+    text-align: justify;
+}
+.weatherpic{
+    max-width: 350px;
+    padding: 1rem;
+}
+.towns h3, h4{
+    margin: 10px auto;
+    color: #072e74;
+}
+h3{
+    font-size: 30px;
+}
+
+.towns img {
+    padding: .5rem;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 12px;
+    padding: 2rem;
+}
+
+ .secs {
+    background-color: #b8bbcc;
+    border: 2px solid #b8bbcc;
+    text-align: center;
+    box-shadow: 0 0 15px #333;
+} 
+
+/*----------- FOOTER --------------*/
 footer{
     margin: 0 auto;
     background-color: #676767;
