@@ -90,8 +90,10 @@ main{
 .words{
     text-align: justify;
 }
+
 .weatherpic{
-    max-width: 350px;
+    /* margin-left: 50px; */
+    max-width: 300px;
     padding: 1rem;
 }
 .towns h3, h4{

@@ -21,14 +21,19 @@
 		text-align: left;
 		max-width: 90%;
 	}
+	.article{
+		height: 300px;
+	}
 	.weatherpic{
 		float: right;
+	}
+	.data{
+		width: 300px;
 	}
 	.secs{
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		
 	}
 	  
 	.secs:nth-child(odd) {

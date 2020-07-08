@@ -9,7 +9,9 @@
         margin:auto;
     }
     .article{
-		display: flex;
+        display: flex;
+        max-width: 90%;
+        margin:0 auto;
     }
     h1{
         text-align: center;
@@ -21,15 +23,20 @@
     }
 	.weatherpic{
 		max-height: 400px;
+    }
+    .data{
+		width: auto;
 	}
     .towns {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .towns img {
         padding: .5rem;
-        max-width: 400px;
+        max-width: 300px;
         max-height: 400px;
     }
     .towns section{
