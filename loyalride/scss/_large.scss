@@ -1,0 +1,30 @@
+@media only screen and (min-width: 60em){
+
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    .rentalpic img{
+		max-width: 90%;
+    }
+    .weather{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rentals {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+    .bottomimg{
+		box-shadow: 0 0 20px #333;
+    }
+
+    .tours{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+    .tours img{
+      max-width: 100%;
+    }
+}

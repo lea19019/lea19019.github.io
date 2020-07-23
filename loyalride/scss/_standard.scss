@@ -1,0 +1,273 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f8f8ff;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Varta', sans-serif;
+}
+/*--------------  Header  -----------------*/
+header section{
+    background-color: white;
+    
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+header img {
+    margin: 5px 5px;
+    max-width: 60px;
+}
+header h1, h5{
+    margin: 0;
+}
+
+header h1{
+    font-size: 45px;
+    padding: 10px 0 0 0;
+}
+header h5{
+    font-size: 20px;
+    padding: 0 0 10px 0;;
+}
+
+.title{
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: white;
+    background-color: #29AB87;
+}
+
+/*--------------  Nav  -----------------*/
+section nav {
+	margin: 0 0 0 0 auto;
+}
+section nav ul{
+    margin: 0;
+
+}
+.navigation {
+    display: block;
+	list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+    display: none;
+    padding: 12px;
+}
+.navigation a {
+    display: block;
+    margin: 0;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    color: #29AB87;
+    font-size: 20px;
+}
+.navigation li:hover {
+	background-color: #a9b2c3;
+}
+
+.responsive li {
+	display: block;
+}
+
+li.page{
+    color: #29AB87;
+    background-color: white;
+}
+
+/*--------------  Main  -----------------*/
+
+h2{
+    margin: 0;
+    color: #1974d2;
+    text-align: center;
+    font-size: 40px;
+}
+h3, h4{
+    color: #1974d2;
+    text-align: center;
+    font-size: 25px;
+}
+
+.attention img{
+    max-width: 100%;
+    flex-grow: 2;
+}
+
+.listen{
+    background-color: #a9b2c3;
+    align-items: center;
+}
+.listen p{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #a9b2c3;
+    color: #1974d2;
+    font-size: 45px;
+    font-family: 'Carter One', cursive;
+}
+
+
+.rental div{
+    font-size: 20px;
+}
+.rental img{
+    box-shadow: 0 0 20px #333;
+}
+
+.rentalpic{
+    display: none;
+}
+.weather{
+    display: none;
+}
+
+.socialmedia{
+    margin: 30px 10px 20px 10px;
+    text-align: center;
+
+}
+.socialmedia img{
+    max-width: 80px;
+}
+
+.bottomimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/*----------- Rentals--------------*/
+.rentals h3, h4{
+    margin: 10px 0 0 0;
+    color: #1974d2;
+    text-align: center;
+    font-size: 30px;
+}
+.rentals p{
+    margin: 5px auto;
+    color: white;
+}
+
+.rentals img {
+    max-width: 300px;
+}
+
+.rentals {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 10px;
+    padding: 2rem;
+}
+
+.rentals section {
+    background-color: #a9b2c3;
+    box-shadow: 0 0 5px #333;
+    text-align: center;
+}
+
+/*----------- Services --------------*/
+.services {
+    background-color: #a9b2c3;
+    box-shadow: 0 0 5px #333;
+}
+.services h3{
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+.services li{
+    color: white;
+}
+.services ul{
+    padding: 0 0 15px 25px;
+}
+
+/*----------- Form --------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #1974d2;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #1974d2;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: larger;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.info{
+    width: 300px;
+}
+form input.submitBtn {
+    border: none;
+    background-color: #6db9d5;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+textarea {
+    width: 90%;
+}
+
+/*----------- Rentals--------------*/
+.contact {
+    background-color: #a9b2c3;
+    box-shadow: 0 0 5px #333;
+    text-align: center;
+}
+.contact p{
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+/*--------------  Tours  -----------------*/
+.tours img{
+    max-width: 100%;
+}
+
+/*--------------  Footer  -----------------*/
+footer{
+    display: grid;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+}

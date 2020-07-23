@@ -1,0 +1,82 @@
+{
+    "rentaltype" : [
+        {
+            "type" : "Honda Metro Scooter",
+            "maxpersons" : "1",
+            "reservation" : [
+                { "halfday" : "20",
+                "fullday" : "30" }
+            ],
+            "walk" : [
+                { "halfday" : "25",
+                "fullday" : "35"}
+            ],
+            "imageurl" : "/images/honda1.jpg"
+        },
+        {
+            "type" : "Honda Dio Scooter",
+            "maxpersons" : "2",
+            "reservation" : [
+                { "halfday" : "30",
+                "fullday" : "40" }
+            ],
+            "walk" : [
+                { "halfday" : "35",
+                "fullday" : "45"}
+            ],
+            "imageurl" : "/images/honda2.jpg"
+        },
+        {
+            "type" : "Honda PCX150 Scooter",
+            "maxpersons" : "2",
+            "reservation" : [
+                { "halfday" : "40",
+                "fullday" : "50" }
+            ],
+            "walk" : [
+                { "halfday" : "45",
+                "fullday" : "55"}
+            ],
+            "imageurl" : "/images/honda3.jpg"
+        },
+        {
+            "type" : "Honda Pioneer ATV",
+            "maxpersons" : "4",
+            "reservation" : [
+                { "halfday" : "50",
+                "fullday" : "70" }
+            ],
+            "walk" : [
+                { "halfday" : "60",
+                "fullday" : "80"}
+            ],
+            "imageurl" : "/images/honda4.jpg"
+        },
+        {
+            "type" : "Jeep Wrangler -4 door with a/c",
+            "maxpersons" : "5",
+            "reservation" : [
+                { "halfday" : "70",
+                "fullday" : "100" }
+            ],
+            "walk" : [
+                { "halfday" : "85",
+                "fullday" : "125"}
+            ],
+            "imageurl" : "/images/jeep1.jpg"
+        },
+        {
+            "type" : "Honda Wrangler -2 door",
+            "maxpersons" : "4",
+            "reservation" : [
+                { "halfday" : "60",
+                "fullday" : "85" }
+            ],
+            "walk" : [
+                { "halfday" : "70",
+                "fullday" : "90"}
+            ],
+            "imageurl" : "/images/jeep2.jpg"
+        }
+    ]
+}

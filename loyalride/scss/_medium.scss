@@ -1,0 +1,84 @@
+@media only screen and (min-width: 37.5em){
+	
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    
+    
+	.attention img{
+		max-width: 100%;
+		flex-grow: 2;
+	}
+	
+	.listen{
+		display: flex;
+		background-color: #a9b2c3;
+		align-items: center;
+		box-shadow: 0 0 10px #333;
+	}
+	.listen p{
+		text-align: center;
+		color: #1974d2;
+		font-size: 45px;
+		font-family: 'Carter One', cursive;
+	}
+	.rental{
+		display: grid;
+    	grid-template-columns: 1fr 1fr;
+    	margin: 60px 10px auto;
+		align-items: center;
+		justify-items: center;
+	}
+	.rentalpic{
+		display: contents;
+	}
+	.rentalpic img{
+		max-width: 80%;
+	}
+	
+	.weather{
+		display: grid;
+    	grid-template-columns: 1fr 1fr;
+		font-size: 20px;
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		margin: 60px 1px 30px 1px ;
+		background-color: #a9b2c3;
+		box-shadow: 0 0 10px #333;
+		color: white;
+	}
+
+	.weather h3{
+		margin: 0;
+		font-size: 28px;
+		padding: 10px;
+	}
+	.rentals{
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+	}
+	.tours{
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-items: center;
+		grid-gap: 10px;
+	}
+	.tours img{
+		max-width: 800px;
+		margin: 10px 0 10px 0 ;
+		box-shadow:0 0 20px #333;
+	}
+
+}

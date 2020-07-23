@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page with information of reservations">
+    <title>Reservations | Loyal Ride</title>
+    <link rel="scooter icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Sans&family=Varta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="/images/scooter.png" alt="logo">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" class="barnav">&#9776; Menu</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/rentals.html">Rentals</a></li>
+                    <li><a href="/reservations.html" class="page">Reservations</a></li>
+                    <li><a href="/tours.html">Tours</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="title">
+            <h1>Loyal Ride</h1>
+            <h5>Ready to ride?</h5>
+        </div>
+    </header>
+    <main>
+        <h2>Reservations</h2>
+        <div class="services">
+            <h3>Information and Services</h3>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+        </div>
+        <div class="formrental">
+            <form method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Rental Form</legend>
+                    <label class="top">Date <input type="date" name="completeDate"></label>
+                    <label class="top">Period <input type="text" name="fullname" pattern="[a-zA-Z0-9\s]+.{4,}"> </label>
+                    <label class="top">Rental Type:<input list="rentalType" name="rentalType" id="rental">
+                    </label>
+                <datalist id="rentalType"> &#9662;
+                      <option value="Honda Metropolitan">
+                      <option value="Honda Dio">
+                      <option value="Honda PCX150">
+                      <option value="Honda Pioneer">
+                      <option value="4-door Jeep Wrangler">
+                      <option value="2-door Jeep Wrangler">
+                    </datalist>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required> </label>
+                    <label class="top">Full Name* <input type="text" name="fullname" pattern="[a-zA-Z0-9\s]+.{4,}" required> </label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" > </label>
+                    <label class="top">Country <input type="text" name="fullname" pattern="[a-zA-Z0-9\s]+.{4,}"> </label>
+                    <label class="top">Accommodations <br></label>
+                    <textarea name="comment" cols="30" rows="10"></textarea>
+        
+                </fieldset>
+        
+                <input type="submit" value="Reserve Now" class="submitBtn">
+                    
+                </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2020 | Vicente A. Castillo | Mexico City | <a
+            href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+    </footer>
+</body>
+</html>
