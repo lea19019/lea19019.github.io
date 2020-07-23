@@ -48,7 +48,7 @@ fetch(forecastURL)
     });
 
 
-const rentals = './files/rentals.json';
+const rentals = '/files/rentals.json';
 
 fetch(rentals)
 .then(function (response) {
