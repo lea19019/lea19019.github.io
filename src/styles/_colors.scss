@@ -1,0 +1,113 @@
+@use "sass:color";
+
+$blue-base: #446BA4;
+$blue: (/* Customized */
+  'base': $blue-base,
+  'lighten-5': #EFF8FF,
+  'lighten-4': #DDEDFA,
+  'lighten-3': #BCDAF5,
+  'lighten-2': #93BAE3,
+  'lighten-1': #7097C8,
+  'darken-1': #31538D,
+  'darken-2': #223D76,
+  'darken-3': #152A5F,
+  'darken-4': #0D1C4E,
+  'accent-1': color.adjust($blue-base, $saturation: 70%, $lightness: 30%),
+  'accent-2': color.adjust($blue-base, $saturation: 60%, $lightness: 20%),
+  'accent-3': color.adjust($blue-base, $saturation: 50%, $lightness: 10%),
+  'accent-4': color.adjust($blue-base, $saturation: 50%)
+);
+$light-blue-base: #42AACB;
+$light-blue: (/* Customized */
+  'base': $light-blue-base,
+  'lighten-5': #ECFDFF,
+  'lighten-4': #D0F7FD,
+  'lighten-3': #AAEEFA,
+  'lighten-2': #7AE1F6,
+  'lighten-1': #52C9E9,
+  'darken-1': #3384A6,
+  'darken-2': #2A6783,
+  'darken-3': #255268,
+  'darken-4': #214457,
+  'accent-1': color.adjust($light-blue-base, $saturation: 70%, $lightness: 30%),
+  'accent-2': color.adjust($light-blue-base, $saturation: 60%, $lightness: 20%),
+  'accent-3': color.adjust($light-blue-base, $saturation: 50%, $lightness: 10%),
+  'accent-4': color.adjust($light-blue-base, $saturation: 50%)
+);
+$green-base: #46AB78;
+$green: (/* Customized */
+  'base': $green-base,
+  'lighten-5': #ECFCF4,
+  'lighten-4': #D3F7E2,
+  'lighten-3': #ADEDCB,
+  'lighten-2': #7FDEB0,
+  'lighten-1': #5AC891,
+  'darken-1': #378760,
+  'darken-2': #2B6A4E,
+  'darken-3': #22523E,
+  'darken-4': #1C4334,
+  'accent-1': color.adjust($green-base, $saturation: 70%, $lightness: 30%),
+  'accent-2': color.adjust($green-base, $saturation: 60%, $lightness: 20%),
+  'accent-3': color.adjust($green-base, $saturation: 50%, $lightness: 10%),
+  'accent-4': color.adjust($green-base, $saturation: 50%)
+);
+$amber-base: #E8972A;
+$amber: (/* Customized */
+  'base': $amber-base,
+  'lighten-5': #FEFAE9,
+  'lighten-4': #FCF1C3,
+  'lighten-3': #FAE287,
+  'lighten-2': #F6CD53,
+  'lighten-1': #F2B839,
+  'darken-1': #C87121,
+  'darken-2': #A04F1B,
+  'darken-3': #7E3D18,
+  'darken-4': #663216,
+  'accent-1': color.adjust($amber-base, $saturation: 70%, $lightness: 30%),
+  'accent-2': color.adjust($amber-base, $saturation: 60%, $lightness: 20%),
+  'accent-3': color.adjust($amber-base, $saturation: 50%, $lightness: 10%),
+  'accent-4': color.adjust($amber-base, $saturation: 50%)
+);
+$blue-grey-base: #5B697E;
+$blue-grey: (/* Customized */
+  'base': $blue-grey-base,
+  'lighten-5': #F7F9FB,
+  'lighten-4': #EFF3F8,
+  'lighten-3': #DFE4ED,
+  'lighten-2': #C6CFDC,
+  'lighten-1': #8B99AE,
+  'darken-1': #404B5D,
+  'darken-2': #2F394A,
+  'darken-3': #1D2533,
+  'darken-4': #111725
+);
+$red-base: #DB4B40;
+$red: (/* Customized */
+  'base': $red-base,
+  'lighten-5': #FCF1F0,
+  'lighten-4': #F9DFDE,
+  'lighten-3': #F6C6C4,
+  'lighten-2': #EFA09C,
+  'lighten-1': #E76F69,
+  'darken-1': #C63629,
+  'darken-2': #A32B20,
+  'darken-3': #83261D,
+  'darken-4': #6B231E,
+  'accent-1': color.adjust($red-base, $saturation: 70%, $lightness: 30%),
+  'accent-2': color.adjust($red-base, $saturation: 60%, $lightness: 20%),
+  'accent-3': color.adjust($red-base, $saturation: 50%, $lightness: 10%),
+  'accent-4': color.adjust($red-base, $saturation: 50%)
+);
+
+$defaults: (
+  'primary': map-get($blue, 'darken-1'),
+  'secondary': map-get($light-blue, 'base'),
+  'error': map-get($red, 'base'),
+  'success': map-get($green, 'base'),
+  'warning': map-get($amber, 'base'),
+  'info': map-get($light-blue, 'base'),
+  'surface': '#FFFFFF',
+  'background': '#F7F9FB'
+);
+
+

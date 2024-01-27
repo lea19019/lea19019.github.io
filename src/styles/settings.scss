@@ -1,0 +1,48 @@
+/*!
+ Copyright (c) 2023 Acquisition Simplicity, Inc. All rights reserved.
+ Not for distribution, reproduction, or use in derivative works without permission.
+ */
+
+@use "sass:color";
+@use "colors";
+@use "shadow";
+@use "typeography";
+
+@forward 'vuetify/lib/styles/tools/functions';
+@forward 'vuetify/settings' with (
+  $body-font-family: typeography.$acquisition-simplicity-font,
+  $card-text-font-size: 1em,
+  $dialog-border-radius: 0.75rem,
+  $button-border-radius: 0.5rem,
+  $field-border-radius: 0.5rem,
+  // Badges are weirdly set.
+  $badge-height: unset,
+  $badge-min-width: 8px,
+  $button-height: 42px,
+  $typography: typeography.$list,
+  $tab-slider-size: 3px,
+  $alert-append-margin-inline-start: 20px,
+  $border-radius-root: 12px,
+  $shadow-key-penumbra: shadow.$shadow-key-penumbra,
+  $shadow-key-umbra: shadow.$shadow-key-umbra,
+  $shadow-key-ambient: shadow.$shadow-key-ambient,
+  $chip-font-weight: 500,
+  $colors: (
+    'blue': colors.$blue,
+    'lightBlue': colors.$light-blue,
+    'green': colors.$green,
+    'amber': colors.$amber,
+    'blue-grey': colors.$blue-grey,
+    'red': colors.$red
+  )
+);
+
+@use 'vuetify/settings';
+
+$primary-transition: 0.3s settings.$standard-easing;
+
+@mixin stack($gutter: 3, $class: '.stack') {
+  #{$class} + #{$class} {
+    margin-top: $gutter * settings.$form-grid-gutter !important;
+  }
+}

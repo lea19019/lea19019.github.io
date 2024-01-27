@@ -1,0 +1,35 @@
+$acquisition-simplicity-font: 'Outfit Variable', Outfit, sans-serif !default;
+$list: (
+  'body-1': (
+    'size': 1rem,
+    'weight': 400,
+    'line-height': 1.5rem,
+    'letter-spacing': normal,
+    'font-family': $acquisition-simplicity-font,
+    'text-transform': none
+  ),
+  'body-2': (
+    'size': .875rem,
+    'weight': 400,
+    'line-height': 1.25rem,
+    'letter-spacing': normal,
+    'font-family': $acquisition-simplicity-font,
+    'text-transform': none
+  ),
+  'button': (
+    'size': .875rem,
+    'weight': 600,
+    'line-height': 2.25rem,
+    'letter-spacing': normal,
+    'font-family': $acquisition-simplicity-font,
+    'text-transform': normal
+  ),
+  'title': (
+    'size': 1.125rem,
+    'weight': 600,
+    'line-height': 1.5rem,
+    'letter-spacing': normal,
+    'font-family': $acquisition-simplicity-font,
+    'text-transform': normal
+  )
+)
