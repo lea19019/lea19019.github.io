@@ -1,6 +1,0 @@
-@forward "@fontsource-variable/outfit";
-@forward "@fontsource/roboto-mono/400";
-@use "@fontsource/outfit/scss/mixins" as Outfit with (
-  $weights: (100, 200, 300, 400, 500, 600, 700, 800, 900)
-);
-
