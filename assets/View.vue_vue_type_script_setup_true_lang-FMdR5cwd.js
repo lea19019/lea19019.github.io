@@ -1,1 +1,0 @@
-import{d as o,c as a,w as t,a3 as n,a4 as r,o as s,a as _}from"./index-paJ4Zt-H.js";const u=o({__name:"View",setup(c){return(p,i)=>{const e=r("router-view");return s(),a(n,null,{default:t(()=>[_(e)]),_:1})}}});export{u as _};
