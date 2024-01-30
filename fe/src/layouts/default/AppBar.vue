@@ -1,15 +1,16 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { useTheme } from 'vuetify'
+import { mdiWeatherSunny, mdiWeatherNight } from '@mdi/js'
 
 const theme = useTheme()
-const icon = ref('mdi-weather-sunny')
+const icon = ref(mdiWeatherSunny)
 
 function toggleTheme () {
   const isDark = theme.global.current.value.dark 
   theme.global.name.value = isDark ? 'light' : 'dark'
-  if (isDark) icon.value = 'mdi-weather-night'
-  else icon.value = 'mdi-weather-sunny'
+  if (isDark) icon.value = mdiWeatherNight
+  else icon.value = mdiWeatherSunny
 }
 </script>
 
