@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-  //
+import Song from '@/components/Song.vue';
+import TitleHeader from '@/components/TitleHeader.vue';
 </script>
 
 <template>
