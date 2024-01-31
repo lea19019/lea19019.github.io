@@ -13,9 +13,16 @@ const routes = [
     component: () => import('@/layouts/default.vue'),
     children: [
       {
-        path: '',
+        path: ':songName',
+        props: route => ({ songName: route.params.songName }),
         component: () => import('@/views/index.vue'),
-      }
+      },
+      {
+        path: '',
+        props: route => ({ songName: 'ser-parte' }),
+        component: () => import('@/views/index.vue'),
+      },
+      
     ]
   }
 ]
