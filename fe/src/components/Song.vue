@@ -10,7 +10,7 @@ const props = defineProps<{
     description: string
   }
 }>();
-const imgURL = computed(() => "/src/assets/" + props.song.image);
+const imgURL = computed(() => "/public/" + props.song.image);
 </script>
 
 <template>
