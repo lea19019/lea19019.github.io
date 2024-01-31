@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { useTheme } from 'vuetify'
-import { mdiWeatherSunny, mdiWeatherNight, mdiMenu } from '@mdi/js'
+import { mdiWeatherSunny, mdiWeatherNight } from '@mdi/js'
 
 const theme = useTheme()
 const icon = ref(mdiWeatherSunny)
@@ -18,22 +18,17 @@ function toggleTheme () {
   <VAppBar flat>
     <VAppBarTitle text="Song Sense"/>
     <VBtn @click="toggleTheme" :icon="icon" />
-    <VBtn icon>
-      <VIcon size="20" :icon="mdiMenu" color="parent"/>
+    <VBtn icon >
+      <span>&#9776;</span>
       <VMenu activator="parent">
-        <VList>
-          <VListItem text="Dulce Soledad" :to="{ path: '/dulce-soledad' }" />
-          <VListItem text="Lattice" :to="{ path: '/lattice' }" />
-          <VListItem text="Mania Cardiaca" :to="{ path: '/mania-cardiaca' }" />
-          <VListItem text="Respiro (Cap. 8)" :to="{ path: '/respiro' }" />
-          <VListItem text="Rue Vieille Du Temple" :to="{ path: '/rue-vieille-du-temple' }" />
-          <VListItem text="Ser Parte" :to="{ path: '/ser-parte' }" />
-        </VList>
+        <VBtn text="Dulce Soledad" :to="{ path: '/dulce-soledad' }" />
+        <VBtn text="Lattice" :to="{ path: '/lattice' }" />
+        <VBtn text="Mania Cardiaca" :to="{ path: '/mania-cardiaca' }" />
+        <VBtn text="Respiro (Cap. 8)" :to="{ path: '/respiro' }" />
+        <VBtn text="Rue Vieille Du Temple" :to="{ path: '/rue-vieille-du-temple' }" />
+        <VBtn text="Ser Parte" :to="{ path: '/ser-parte' }" />
       </VMenu>
     </VBtn>
-
-    
-    
   </VAppBar>
 </template>
 
