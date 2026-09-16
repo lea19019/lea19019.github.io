@@ -1,0 +1,69 @@
+/* Black and white, one column, nothing that moves except the game. */
+:root {
+  --ink: #fff;
+  --paper: #000;
+  --dim: #888;
+  --rule: #333;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); color: var(--ink); }
+body {
+  margin: 0;
+  font-family: "Iosevka", "JetBrains Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 64px 20px 48px;
+}
+header { margin-bottom: 40px; }
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+.tagline { color: var(--dim); margin: 0; }
+h2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dim);
+  border-top: 1px solid var(--rule);
+  padding-top: 24px;
+  margin: 40px 0 16px;
+}
+p { margin: 0 0 14px; }
+ul { padding-left: 20px; margin: 0 0 14px; }
+li { margin-bottom: 8px; }
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--dim);
+}
+a:hover { text-decoration-color: var(--ink); }
+.links a { margin-right: 20px; }
+.hint, .score { color: var(--dim); font-size: 0.9rem; }
+.score { margin-top: 10px; }
+.score span { color: var(--ink); font-weight: 700; }
+#board {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  cursor: none;
+  touch-action: none;
+}
+footer { margin-top: 56px; color: var(--dim); font-size: 0.85rem; }
+footer p { margin: 0; }
+@media (max-width: 480px) {
+  main { padding-top: 40px; }
+  h1 { font-size: 1.6rem; }
+}

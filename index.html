@@ -1,17 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/song-qZXiF4cI.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Song Sense</title>
-  <script type="module" crossorigin src="/assets/index-Wy76BrXO.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-W0KJqS4H.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adrian Castillo</title>
+  <meta name="description" content="Adrian Castillo. MS CS at BYU. Model compression, multilingual machine translation, low-resource languages.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23000'/%3E%3Crect x='2' y='5' width='2' height='6' fill='%23fff'/%3E%3Crect x='12' y='5' width='2' height='6' fill='%23fff'/%3E%3Crect x='7' y='7' width='2' height='2' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="app"></div>
-</body>
+  <main>
+    <header>
+      <h1>Adrian Castillo</h1>
+      <p class="tagline">Making language models smaller without losing the languages that need them most.</p>
+    </header>
 
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        MS in Computer Science at BYU, graduating December 2026. I work in the machine
+        translation lab on model compression: pruning, quantization, distillation, and what
+        each one costs a language that had little training data to begin with.
+      </p>
+      <p>
+        <strong>Now:</strong> why does 4-bit quantization hurt low-resource languages more
+        than English? I am testing whether those languages are under-trained or whether the
+        damage sits in specific parts of the network, with RTN, GPTQ, AWQ and SmoothQuant
+        implemented from the papers.
+      </p>
+      <ul>
+        <li>Pruned and quantized Aya Expanse 8B to 3.3x smaller at 1.8x vLLM throughput,
+          within 0.8% COMET. Three models on
+          <a href="https://huggingface.co/adrianMT56">Hugging Face</a>.</li>
+        <li>Speech-to-speech translation for Efik, Igbo, Swahili and Xhosa, with a
+          speech-quality metric distilled for languages BLASER did not cover.</li>
+        <li>Before the MS: three years of production engineering, most recently the AWS
+          platform for a live AI dubbing service.</li>
+      </ul>
+      <p>I build with coding agents daily, under tests and review, and I only ship what I can explain.</p>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <p class="links">
+        <a href="https://github.com/lea19019">GitHub</a>
+        <a href="https://www.linkedin.com/in/v-adrian-castillo/">LinkedIn</a>
+        <a href="https://huggingface.co/adrianMT56">Hugging Face</a>
+        <a href="mailto:vadrian.castillo.leal@gmail.com">Email</a>
+      </p>
+    </section>
+
+    <section id="pong">
+      <h2>Pong</h2>
+      <p class="hint">Move with the mouse, touch, or W and S. First to 7. Click the board to start.</p>
+      <canvas id="board" width="640" height="400" aria-label="Pong game"></canvas>
+      <p class="score"><span id="you">0</span> you &middot; machine <span id="cpu">0</span></p>
+    </section>
+
+    <footer>
+      <p>Provo, Utah &middot; <a href="https://github.com/lea19019/lea19019.github.io">source</a></p>
+    </footer>
+  </main>
+  <script src="pong.js"></script>
+</body>
 </html>
